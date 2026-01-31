@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenlake Naturales - POS System</title>
+    <title>Greenlake Naturals - POS System</title>
     <style>
         :root {
             /* Light Theme */
@@ -538,7 +538,7 @@
     <div id="login-view">
         <div class="card login-card">
             <div class="text-center" style="margin-bottom: 2rem;">
-                <h1 class="text-2xl font-bold text-primary">Greenlake Naturales</h1>
+                <h1 class="text-2xl font-bold text-primary">Greenlake Naturals</h1>
                 <p class="text-muted">Shop Billing System</p>
                 <div id="login-msg" class="text-muted text-xs">Default PIN: 1234</div>
             </div>
@@ -568,7 +568,7 @@
         <!-- Sidebar -->
         <aside id="sidebar">
             <div class="sidebar-header">
-                <h2 class="text-xl font-bold text-primary">Greenlake Naturales</h2>
+                <h2 class="text-xl font-bold text-primary">Greenlake Naturals</h2>
             </div>
             <nav class="flex flex-col flex-1 p-2 gap-2">
                 <a class="nav-item" data-view="dashboard" onclick="App.router.navigate('dashboard')">
@@ -999,7 +999,7 @@
 
                 // Initialize Defaults if missing
                 if (Store.get('shop_config', null) === null) {
-                    Store.set('shop_config', { name: 'Greenlake Naturales', address: 'City Center', phone: '9876543210', gst_default: 18, footer: 'Thank you for visiting!' });
+                    Store.set('shop_config', { name: 'Greenlake Naturals', address: 'City Center', phone: '9876543210', gst_default: 18, footer: 'Thank you for visiting!' });
                 }
                 if (Store.get('categories', []).length === 0) {
                     Store.set('categories', [{ id: 'c1', name: 'Lipstick', color: '#ffcccb' }, { id: 'c2', name: 'Skincare', color: '#d1e7dd' }]);
@@ -1673,7 +1673,7 @@
                     App.pos.clearCart();
                 },
                 printReceipt: (inv) => {
-                    const config = Store.get('shop_config', { name: 'Greenlake Naturales' });
+                    const config = Store.get('shop_config', { name: 'Greenlake Naturals' });
                     // Debug: Check if logo data exists
                     if (!config.logo) console.warn("No logo found in config");
                     if (!config.show_logo) console.warn("Show logo is disabled");
@@ -2069,5 +2069,6 @@
         window.onload = App.init;
     </script>
 </body>
+
 
 </html>
